@@ -1,0 +1,56 @@
+#nameTitle {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.cyan-700 {
+    background: rgb(14 116 144);
+}
+
+.text-cyan-700 {
+    color: rgb(14 116 144);
+}
+
+.border-cyan-700 {
+    border: 5px solid rgb(14 116 144);
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+
+    &:focus,
+    &:active,
+    &-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control {
+    outline: none;
+    box-shadow: none;
+    border: 2px solid lightgrey;
+
+    &:focus,
+    &:active {
+        outline: none;
+        box-shadow: none;
+        border-color: grey;
+    }
+}
+
+#scrollBackBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+}

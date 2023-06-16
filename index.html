@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hanep's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5b8ff677c4.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-light" data-spy="scroll" data-target="#navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm position-fixed top-0 z-3" id="navbar"
+        style="left: 0; right: 0;">
+        <div class="container">
+            <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#">
+                <img src="assets/logo.svg" alt="Logo" height="28" class="d-inline-block align-text-top rounded-circle">
+                Hanep
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ENDNAVBAR -->
+
+    <!-- HOME -->
+    <section id="home" class="p-5 p-md-0 min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-end pe-4">
+                    <div class="d-inline-block rounded-circle overflow-hidden border-cyan-700">
+                        <img src="assets/me.jpg" height="220" alt="me">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                    <h3 class="text-cyan-700">Hi👋, Nama Saya</h5>
+                        <div>
+                            <h1 class="d-inline-block fw-bold p-2 text-white cyan-700" id="nameTitle">Yudis Sutisna</h1>
+                        </div>
+                        <h5 class="text-center text-md-start" id="welcome"></h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ENDHOME -->
+
+    <!-- ABOUT -->
+    <section id="about" class="bg-body-secondary py-md-5 min-vh-100">
+        <div class="container p-5 p-md-0">
+            <h2 class="text-center mb-5 pt-3 fw-bold">About Me</h2>
+            <div class="row d-flex justify-content-center gap-4">
+                <div class="col-md-5 cyan-700 rounded text-white p-3">
+                    <h4 class="fw-bold mb-4">Sekilas</h4>
+                    <p>Halo Semua, nama saya Yudis Sutisna biasa di panggil Hanep. Lahir di
+                        Tasikmalaya, 26 juni 2005 (18 Tahun). Saya adalah seorang siswa yang sedang
+                        bersekolah di SMK Al Huda Sariwangi dan mengambil jurusan Rekayasa Perangkat Lunak.</p>
+                    <p>Saat ini saya sedang belajar hal-hal seputar ilmu komputer khususnya di bidang Web Programming.
+                        Prestasi saya adalah saya tidak merokok, tidak mabuk-mabukan dan rajin menabung
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fw-bold mb-4">Edukasi</h4>
+                    <div class="border-start border-2 border-secondary position-relative ps-4 mb-3">
+                        <i class="bi bi-book position-absolute cyan-700 px-2 py-1 text-white rounded-circle"
+                            style="left: -16px;"></i>
+                        <h5 class="mb-0">SMP Negeri 2 Sariwangi</h5>
+                        <small>2018 - 2021</small>
+                    </div>
+                    <div class="border-start border-2 border-secondary position-relative ps-4">
+                        <i class="bi bi-book position-absolute cyan-700 px-2 py-1 text-white rounded-circle"
+                            style="left: -16px;"></i>
+                        <h5 class="mb-0">SMK Al Huda Sariwangi</h5>
+                        <small>2021 - sekarang</small>
+                        <p>Rekayasa Perangkat Lunak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ENDABOUT -->
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-5 min-vh-100">
+        <h2 class="text-center mb-3 mb-md-5 pt-3 fw-bold">Skills</h2>
+        <div class="container p-4 p-md-0" style="max-width: 768px;">
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-4 ">
+                    <div class="card w-100 mb-3" style="width: 18rem;">
+                        <img src="assets/html-5.png" class="card-img-top p-5 pb-0" alt="html">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">HTML</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card w-100 mb-3" style="width: 18rem;">
+                        <img src="assets/css-3.png" class="card-img-top p-5 pb-0" alt="html">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CSS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card w-100 mb-3" style="width: 18rem;">
+                        <img src="assets/js.png" class="card-img-top p-5 pb-0" alt="html">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Javascript</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card w-100 mb-3" style="width: 18rem;">
+                        <img src="assets/laravel.png" class="card-img-top p-5 pb-0" alt="html">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Laravel</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card w-100 mb-3" style="width: 18rem;">
+                        <img src="assets/bootstrap.png" class="card-img-top p-5 pb-0" alt="html">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Bootstrap</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="card w-100 mb-3" style="width: 18rem;">
+                        <img src="assets/tailwindcss.png" class="card-img-top p-5 pb-0" alt="html">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">TailwindCSS</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ENDSKILLS -->
+
+    <!-- PROJECT -->
+    <section id="projects" class="bg-body-secondary py-5 min-vh-100">
+        <h2 class="text-center mb-3 mb-md-5 pt-3 fw-bold">Projects</h2>
+        <div class="container p-4 p-md-0">
+            <div class="row gap-4 justify-content-center">
+                <div class="col-md-3">
+                    <div class="card bg-body-secondary w-100" style="width: 18rem;">
+                        <img src="assets/projects/todolist.PNG" class="card-img-top">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title">TodoList</h5>
+                                </div>
+                                <div class="col-4 bg text-end">
+                                    <a href="https://github.com/Hanep77/todolist-laravel"
+                                        class="btn btn-sm py-0 px-1 btn-outline-dark" title="github">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://neptodo.000webhostapp.com/"
+                                        class="btn btn-sm py-0 px-1 btn-outline-dark" title="kunjungi website">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="card-text text-secondary">Pengelola aktifitas yang simpel</p>
+                            <div class="d-flex gap-2">
+                                <img src="assets/laravel.png" alt="laravel" height="28" title="laravel">
+                                <img src="assets/bootstrap.png" alt="bootstrap" height="28" title="bootsrap">
+                                <img src="assets/js.png" alt="javascript" height="28" title="javascript">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-body-secondary w-100" style="width: 18rem;">
+                        <img src="assets/projects/tictactoe.PNG" class="card-img-top">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title">TicTacToe</h5>
+                                </div>
+                                <div class="col-4 bg text-end">
+                                    <a href="#projects" class="btn btn-sm py-0 px-1 btn-outline-dark" title="github">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://tictactoe.hanep77.repl.co/"
+                                        class="btn btn-sm py-0 px-1 btn-outline-dark" title="kunjungi website">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="card-text text-secondary">Game yang cukup seru dimainkan saat gabut</p>
+                            <div class="d-flex gap-2">
+                                <img src="assets/html-5.png" alt="html" height="28" title="html">
+                                <img src="assets/css-3.png" alt="css" height="28" title="css">
+                                <img src="assets/js.png" alt="javascript" height="28" title="javascript">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-body-secondary w-100" style="width: 18rem;">
+                        <img src="assets/projects/jadwalpelajaran.PNG" class="card-img-top">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title">Jadwal Pelajaran</h5>
+                                </div>
+                                <div class="col-4 bg text-end">
+                                    <a href="https://github.com/Hanep77/jadwal-pelajaran"
+                                        class="btn btn-sm py-0 px-1 btn-outline-dark" title="github">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://jadwal-pelajaran-rpl.vercel.app/"
+                                        class="btn btn-sm py-0 px-1 btn-outline-dark" title="kunjungi website">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="card-text text-secondary">Jadwal pelajaran kelas XI RPL A Tahun ajaran 2022/2023
+                                di SMK Al-Huda Sariwangi</p>
+                            <div class="d-flex gap-2">
+                                <img src="assets/tailwindcss.png" alt="tailwindcss" height="28" title="tailwindcss">
+                                <img src="assets/js.png" alt="javascript" height="28" title="javascript">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ENDPROJECT -->
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5 min-vh-100">
+        <h2 class="text-center mb-3 mb-md-5 pt-3 fw-bold">Contact Me</h2>
+        <div class="container container p-4 p-md-0">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="mb-3 row">
+                        <div class="col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label">Alamat Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" placeholder="nama anda">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                            placeholder="Tuliskan pesan disini"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Kirim</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <h5 class="text-center mb-3 mt-4">My Social Media</h5>
+                <div class="col-md-6 text-center">
+                    <a href="" class="btn btn-outline-primary"><i class="bi bi-facebook"></i></a>
+                    <a href="" class="btn btn-outline-danger"><i class="bi bi-instagram"></i></a>
+                    <a href="" class="btn btn-outline-dark"><i class="bi bi-github"></i></a>
+                    <a href="" class="btn btn-outline-danger"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ENDCONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white p-3 d-flex justify-content-center align-items-center">
+        <small><i class="bi bi-c-circle"></i> 2023 Hanep</small>
+    </footer>
+    <!-- ENDFOOTER -->
+
+    <button id="scrollBackBtn" class="border-0 fs-4 text-white cyan-700 rounded-circle" title="Scroll Back to Top">
+        <i class="bi bi-rocket"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+            navbarLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    var navbarCollapse = document.querySelector('.navbar-collapse');
+                    navbarCollapse.classList.remove('show');
+                });
+            });
+        });
+
+        var app = document.getElementById('welcome');
+
+        var typewriter = new Typewriter(app, {
+            loop: false,
+            delay: 50,
+        });
+
+        typewriter
+            .pauseFor(500)
+            .typeString('Selamat Datang di Website Portfolio Saya')
+            .start()
+
+        // navLinks = document.querySelectorAll('.nav-link')
+
+        // const url = window.location.toString().split('#')
+
+        // if (url[1] != '' && url.length >= 2) {
+        //     navLinks.forEach(navLink => navLink.className = 'nav-link')
+        //     navLinks.forEach(navLink => {
+        //         if (url[url.length - 1] == navLink.innerText.toLowerCase()) {
+        //             navLink.className = 'nav-link active'
+        //         }
+        //     })
+        // }
+
+        // navLinks.forEach(navLink => {
+        //     navLink.addEventListener('click', function () {
+        //         navLinks.forEach(navLink => navLink.className = 'nav-link')
+        //         this.className = 'nav-link active'
+        //     })
+        // })
+
+        // === SCROLLSPY
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar'
+        });
+
+        // === BACKTOTOP
+        window.addEventListener('scroll', function () {
+            var scrollBackBtn = document.getElementById('scrollBackBtn');
+
+            if (window.pageYOffset > 0) {
+                scrollBackBtn.style.display = 'block';
+            } else {
+                scrollBackBtn.style.display = 'none';
+            }
+        });
+
+        var scrollBackBtn = document.getElementById('scrollBackBtn');
+        scrollBackBtn.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+</body>
+
+</html>
