@@ -15,6 +15,10 @@
     border: 5px solid rgb(14 116 144);
 }
 
+.border-color-cyan-700 {
+    border-color: rgb(14 116 144);
+}
+
 .navbar-toggler {
     border: none;
     outline: none;
