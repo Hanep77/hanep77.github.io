@@ -280,24 +280,37 @@
         <div class="container container p-4 p-md-0">
             <div class="row justify-content-center">
                 <div class="col-md-7">
-                    <div class="mb-3 row">
-                        <div class="col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Alamat Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <div class="alert alert-success alert-dismissible fade show d-none" id="successAlert" role="alert">
+                        <strong>Terimakasih!</strong> Pesan sudah berhasil dikirim.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <form name="submit-to-google-sheet">
+                        <div class="mb-3 row">
+                            <div class="col-md-6">
+                                <label for="exampleFormControlInput1" class="form-label">Alamat Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="name@example.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleFormControlInput1" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="name" name="nama" placeholder="nama anda"
+                                    required>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="name" placeholder="nama anda">
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" name="pesan" rows="4"
+                                placeholder="Tuliskan pesan disini" required></textarea>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
-                            placeholder="Tuliskan pesan disini"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Kirim</button>
-                    </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary" id="sendBtn"><i class="bi bi-send"></i>
+                                Kirim</button>
+                            <button class="btn btn-primary d-none" type="button" id="loadingBtn" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -398,6 +411,31 @@
             });
         });
 
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbykQk5JjTaDOPXOQKCrY5rWmmY2G6Awl2qbI0q_90NR9s2PgRpT1gYW_3ja05oPVsjN/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const sendBtn = document.querySelector('#sendBtn')
+        const loadingBtn = document.querySelector('#loadingBtn')
+        const successAlert = document.querySelector('#successAlert')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+
+            sendBtn.classList.toggle('d-none')
+            loadingBtn.classList.toggle('d-none')
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    sendBtn.classList.toggle('d-none')
+                    loadingBtn.classList.toggle('d-none')
+                    successAlert.classList.toggle('d-none')
+                    form.reset()
+                })
+                .catch(error => {
+                    sendBtn.classList.toggle('d-none')
+                    loadingBtn.classList.toggle('d-none')
+                })
+        })
     </script>
 </body>
 
