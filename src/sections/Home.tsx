@@ -42,11 +42,13 @@ export default function Home() {
             <span className="inline-block w-3 h-3 bg-green-500 rounded-full"></span>
           </div>
         </div>
-        <div className="p-1 h-96 overflow-y-auto">
+        <label htmlFor="input" className="block p-1 h-96 overflow-y-auto">
           {inputs.map((input, index) => (
             <div key={index}>
-              <label><span className="text-green-300">hanep:</span><span className="text-blue-300">~</span>$ </label>
-              <input type="text" className="bg-transparent outline-none" autoFocus={true} disabled={true} defaultValue={input} />
+              <div className="flex gap-1">
+                <label><span className="text-green-300">hanep:</span><span className="text-blue-300">~</span>$ </label>
+                <input type="text" className="flex-grow bg-transparent outline-none" autoFocus={true} disabled={true} defaultValue={input} />
+              </div>
               {input != "cat greet.txt" && (
                 <p>command wrong</p>
               )}
@@ -59,13 +61,13 @@ export default function Home() {
             <p>problem-solving, and building meaningful projects.</p>
           </div>
           <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="flex gap-1">
               <label><span className="text-green-300">hanep:</span><span className="text-blue-300">~</span>$ </label>
-              <input type="text" name="input" className="bg-transparent outline-none" autoFocus={true} autoCorrect="off" spellCheck="false" autoComplete="off" />
+              <input type="text" id="input" name="input" className="flex-grow bg-transparent outline-none" autoFocus={true} autoCorrect="off" spellCheck="false" autoComplete="off" />
             </form>
           </div>
-        </div>
+        </label>
       </div>
-    </section>
+    </section >
   )
 }
