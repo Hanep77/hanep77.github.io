@@ -5,6 +5,7 @@ import TerminalInput, { RulesType } from "./TerminalInput";
 export default function Terminal() {
   const [inputs, setInputs] = useState<string[]>([])
   const [rules, setRules] = useState<RulesType[]>([])
+  const [history, setHistory] = useState<string[]>([])
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -13,6 +14,7 @@ export default function Terminal() {
     (e.target as HTMLFormElement).input.value = ""
 
     setInputs(prev => [...prev, inputValue]);
+    setHistory(prev => [inputValue, ...prev]);
     rules.map(rule => {
       if (inputValue == rule.command) {
         rule.function();
@@ -40,6 +42,7 @@ export default function Terminal() {
           handleSubmit={(e: FormEvent) => handleSubmit(e)}
           setRules={setRules}
           setInputs={setInputs}
+          history={history}
         />
       </label>
     </div>
