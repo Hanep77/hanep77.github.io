@@ -3,9 +3,9 @@ import CommandHistory from "./CommandHistory";
 import TerminalInput, { RulesType } from "./TerminalInput";
 
 export default function Terminal() {
-  const [inputs, setInputs] = useState<string[]>([])
+  const [inputs, setInputs] = useState<string[]>(["cat greet.txt"])
   const [rules, setRules] = useState<RulesType[]>([])
-  const [history, setHistory] = useState<string[]>([])
+  const [history, setHistory] = useState<string[]>(["cat greet.txt"])
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
