@@ -23,7 +23,7 @@ export default function Terminal() {
   }
 
   return (
-    <div className="bg-zinc-800 border border-zinc-700 w-80 sm:w-[600px] rounded tracking-wide">
+    <div className="bg-zinc-800 border border-zinc-700 w-full sm:w-[600px] rounded tracking-wide">
       {/* header */}
       <div className="py-1 border-b border-zinc-700 text-center flex justify-center items-center relative">
         <p>Terminal</p>
