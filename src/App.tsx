@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import About from "./sections/About";
 import Home from "./sections/Home";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       </header>
       <main className="bg-zinc-900 text-zinc-100">
         <Home />
+        <About />
       </main>
     </>
   )
