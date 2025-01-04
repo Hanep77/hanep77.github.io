@@ -8,7 +8,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="h-16 flex justify-between items-center max-w-screen-lg mx-auto px-4 xl:px-0">
+    <nav className="h-16 flex justify-between items-center max-w-screen-md mx-auto px-4 xl:px-0">
       <div>
         <h1 className="text-2xl font-bold">Hanep</h1>
       </div>

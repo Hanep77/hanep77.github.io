@@ -8,7 +8,7 @@ export default function App() {
       <header className={`bg-zinc-900 border-b border-zinc-700 text-slate-100 fixed top-0 left-0 right-0 transition z-50`}>
         <Navbar />
       </header>
-      <main className="bg-zinc-900 text-zinc-100">
+      <main className="bg-zinc-900 text-zinc-100 px-4 2xl:pt-0 sm:px-0">
         <Home />
         <About />
       </main>
