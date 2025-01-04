@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Home from "./sections/Home";
+import Skills from "./sections/Skills";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <main className="bg-zinc-900 text-zinc-100 px-4 2xl:pt-0 sm:px-0">
         <Home />
         <About />
+        <Skills />
       </main>
     </>
   )
