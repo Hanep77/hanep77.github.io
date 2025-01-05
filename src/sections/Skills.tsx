@@ -4,8 +4,8 @@ import { TbSql } from "react-icons/tb";
 
 export default function Skills() {
   return (
-    <section id="skills" className="min-h-screen max-w-screen-md m-auto">
-      <div className="max-w-screen-lg m-auto pt-20">
+    <section id="skills" className="min-h-screen max-w-screen-md m-auto px-4 2xl:pt-0 sm:px-0">
+      <div className="max-w-screen-lg m-auto py-20">
         <h2 className="text-2xl font-bold text-center mb-5">:<span className="text-blue-400">~</span><span className="text-green-400">$</span>Skills</h2>
         <div className="flex flex-col sm:flex-row gap-3">
           <div className="sm:w-3/5 border p-2 text-sm sm:text-base rounded border-zinc-700 bg-zinc-800">

@@ -14,8 +14,8 @@ export default function About() {
                     \_/
         `;
   return (
-    <section id="about" className="min-h-screen max-w-screen-md m-auto">
-      <div className="max-w-screen-lg m-auto pt-20">
+    <section id="about" className="min-h-screen max-w-screen-full m-auto bg-gradient-to-br from-zinc-900 to-zinc-800">
+      <div className="max-w-screen-md m-auto pt-20 px-4 2xl:pt-0 sm:px-0">
         <h2 className="text-2xl font-bold text-center mb-5">:<span className="text-blue-400">~</span><span className="text-green-400">$</span>About</h2>
         <div className="flex flex-col sm:flex-row sm:items-center">
           <div className="sm:w-2/3">

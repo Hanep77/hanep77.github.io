@@ -2,7 +2,7 @@ import Terminal from "../components/Terminal";
 
 export default function Home() {
   return (
-    <section id="#" className="min-h-screen m-auto max-w-screen-md flex flex-col justify-center items-center">
+    <section id="#" className="min-h-screen m-auto max-w-screen-md flex flex-col justify-center items-center px-4 2xl:pt-0 sm:px-0">
       {/* <div className="w-full mb-2 bg-green-300 bg-opacity-10 border border-green-900 rounded p-2"> */}
       {/*   <p>Note:</p> */}
       {/*   <ul className="list-disc ms-6"> */}
