@@ -86,10 +86,10 @@ export default function Projects() {
               <div className="flex justify-between">
                 <h3 className="text-lg font-semibold">NepTweet</h3>
                 <div className="flex gap-2 text-xl">
-                  <a href="https://github.com/hanep77/neptweet"><SiGithub /></a>
+                  <a href="https://github.com/hanep77/neptweet-frontend"><SiGithub /></a>
                 </div>
               </div>
-              <p className="text-zinc-400">I often use typing test web like 10fastfingers and monkeytype. so I tried to make my own</p>
+              <p className="text-zinc-400">A social app to share whatever, whenever</p>
               <div className="flex flex-wrap text-sm gap-2 mt-2">
                 <div className="flex items-center h-8 px-2 bg-blue-400 bg-opacity-15 rounded-full gap-1">
                   <SiReact className="text-lg" />
