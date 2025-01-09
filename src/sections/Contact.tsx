@@ -11,9 +11,9 @@ export default function Contact() {
           </div>
           <div className="flex gap-4">
             <ul>
-              <li><a href="https://instagram.com/hanep77" className="flex items-center gap-1 hover:text-zinc-200"><BsInstagram />Instagram - @hanep77</a></li>
-              <li><a href="https://github.com/hanep77" className="flex items-center gap-1 hover:text-zinc-200"><BsGithub />Github - hanep77</a></li>
-              <li><a href="yudishan@gmail.com" className="flex items-center gap-1 hover:text-zinc-200"><MdEmail />Email - yudishan@gmail.com</a></li>
+              <li><a href="https://instagram.com/hanep77" className="flex items-center gap-1 hover:text-zinc-200"><BsInstagram />@hanep77</a></li>
+              <li><a href="https://github.com/hanep77" className="flex items-center gap-1 hover:text-zinc-200"><BsGithub />hanep77</a></li>
+              <li><a href="yudishan@gmail.com" className="flex items-center gap-1 hover:text-zinc-200"><MdEmail />yudishan@gmail.com</a></li>
             </ul>
           </div>
         </div>
