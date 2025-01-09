@@ -17,7 +17,7 @@ export default function Contact() {
             </ul>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-zinc-700" />
         <span className="text-sm">©2025 Hanep</span>
       </div>
     </footer>
