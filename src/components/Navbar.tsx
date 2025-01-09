@@ -8,7 +8,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="h-16 flex justify-between items-center max-w-screen-md mx-auto px-4 xl:px-0">
+    <nav className="h-16 flex justify-between items-center max-w-screen-md mx-auto px-4 md:px-0">
       <div>
         <h1 className="text-2xl font-bold">Hanep</h1>
       </div>
@@ -25,9 +25,6 @@ export default function Navbar() {
           </li>
           <li className="w-full md:w-auto text-center md:text-start">
             <a href="#projects" className="hover:text-green-500 block md:inline w-full border-b md:border-none border-zinc-700 p-4 md:p-0" onClick={handleSidebar}>Projects</a>
-          </li>
-          <li className="w-full md:w-auto text-center md:text-start">
-            <a href="#contact" className="hover:text-green-500 block md:inline w-full border-b md:border-none border-zinc-700 p-4 md:p-0" onClick={handleSidebar}>Contact</a>
           </li>
         </ul>
       </div>
