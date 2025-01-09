@@ -13,7 +13,7 @@ export default function Contact() {
             <ul>
               <li><a href="https://instagram.com/hanep77" className="flex items-center gap-1 hover:text-zinc-200"><BsInstagram />@hanep77</a></li>
               <li><a href="https://github.com/hanep77" className="flex items-center gap-1 hover:text-zinc-200"><BsGithub />hanep77</a></li>
-              <li><a href="yudishan@gmail.com" className="flex items-center gap-1 hover:text-zinc-200"><MdEmail />yudishan@gmail.com</a></li>
+              <li><p className="flex items-center gap-1 hover:text-zinc-200"><MdEmail />yudishan26@gmail.com</a></li>
             </ul>
           </div>
         </div>
