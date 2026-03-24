@@ -1,25 +1,47 @@
-import { BsGithub, BsInstagram } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin, IoMailOutline } from "react-icons/io5";
+
+const contacts = [
+  {
+    url: "https://github.com/hanep77",
+    name: "hanep77",
+    social: "github",
+    icon: IoLogoGithub
+  },
+  {
+    url: "https://instagram.com/hanep77",
+    name: "hanep77",
+    social: "instagram",
+    icon: IoLogoInstagram
+  },
+  {
+    url: "https://linkedin.com/in/yudis-sutisna",
+    name: "Yudis Sutisna",
+    social: "linkedin",
+    icon: IoLogoLinkedin
+  },
+  {
+    url: "mailto:yudishan26@gmail.com",
+    name: "yudishan26@gmail.com",
+    social: "Email",
+    icon: IoMailOutline
+  }
+]
 
 export default function Contact() {
   return (
-    <footer className="bg-zinc-900 text-zinc-400">
-      <div className="mx-auto w-full max-w-screen-md px-4 md:px-0 py-6 lg:py-8">
-        <div className="flex justify-between">
-          <div className="mb-6 md:mb-0">
-            <h1 className="text-2xl font-bold text-slate-100">Hanep</h1>
+    <div className="sm:w-1/2 space-y-4 border-t border-transparent">
+      <h4 className="font-bold border-b border-zinc-700 text-center py-2">Contact</h4>
+      {contacts.map(contact =>
+        <div className="border p-2 text-sm sm:text-base rounded border-zinc-700 bg-zinc-800 flex items-center gap-4">
+          <div>
+            <contact.icon className="text-3xl" />
           </div>
-          <div className="flex gap-4">
-            <ul>
-              <li><a href="https://instagram.com/hanep77" className="flex items-center gap-1 hover:text-zinc-200"><BsInstagram />@hanep77</a></li>
-              <li><a href="https://github.com/hanep77" className="flex items-center gap-1 hover:text-zinc-200"><BsGithub />hanep77</a></li>
-              <li><p className="flex items-center gap-1 hover:text-zinc-200"><MdEmail />yudishan26@gmail.com</p></li>
-            </ul>
+          <div>
+            <p className="text-xs text-zinc-400">{contact.social}</p>
+            <p>{contact.name}</p>
           </div>
         </div>
-        <hr className="my-6 border-zinc-700" />
-        <span className="text-sm">©2025 Hanep</span>
-      </div>
-    </footer>
+      )}
+    </div>
   )
 }
